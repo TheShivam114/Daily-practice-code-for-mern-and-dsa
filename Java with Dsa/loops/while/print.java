@@ -26,7 +26,7 @@ class print
         int a=sc.nextInt();
         int i=0;
         int sum=0;
-        while(b<=a)
+        while(i<=a)
         {
            sum=sum+i;
            i++; 
