@@ -1,130 +1,132 @@
-# .gitignore - Java + VS Code + MERN (Mongo, Express, React, Node)
+# # .gitignore - Java + VS Code + MERN (Mongo, Express, React, Node)
 
-# -----------------------
-# Java
-# -----------------------
-# Compiled class files
+# # -----------------------
+# # Java
+# # -----------------------
+# # Compiled class files
+# *.class
+
+# # Package files
+# *.jar
+# *.war
+# *.ear
+
+# # Build directories
+# /target/
+# /build/
+# /out/
+# /bin/
+# /generated/
+
+# # Gradle
+# .gradle/
+# /build/
+# !gradle/wrapper/gradle-wrapper.jar
+
+# # Maven
+# pom.xml.tag
+# pom.xml.releaseBackup
+# pom.xml.versionsBackup
+# pom.xml.next
+# release.properties
+# dependency-reduced-pom.xml
+# buildNumber.properties
+
+# # IDE files
+# *.iml
+# *.ipr
+# *.iws
+# /.idea/
+# /.project
+# .classpath
+# .settings/
+# nbproject/private/
+
+# # -----------------------
+# # VS Code
+# # -----------------------
+# .vscode/
+# .vscode-test/
+
+# # -----------------------
+# # Node / MERN
+# # -----------------------
+# # Node modules
+# /node_modules/
+# //node_modules/
+
+# # Logs
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# pnpm-debug.log*
+
+# # Runtime data
+# pids
+# *.pid
+# *.seed
+# *.pid.lock
+
+# # Builds & caches
+# /dist/
+# /build/
+# /.next/
+# /out/
+# /public/static/
+# /.cache/
+# .tmp/
+# .temp/
+
+# # Test coverage
+# /coverage/
+# .nyc_output/
+
+# # Environment files
+# .env
+# .env.*.local
+# .env.local
+# .env.production.local
+# .env.development.local
+
+# # Misc
+# *.tgz
+# *.log
+
+# # Ignore lockfiles? (Usually you should commit package-lock.json/yarn.lock for reproducible builds)
+# # Uncomment if you want to ignore specific lockfiles:
+# # package-lock.json
+# # yarn.lock
+# # pnpm-lock.yaml
+
+# # -----------------------
+# # Database / Dev artifacts (MERN)
+# # -----------------------
+# /data/
+# /data/db/
+# /dump/
+# /mongodb/
+# /mongo-data/
+
+# # -----------------------
+# # Docker
+# # -----------------------
+# /docker-compose.override.yml
+# .docker/
+
+# # -----------------------
+# # OS
+# # -----------------------
+# .DS_Store
+# Thumbs.db
+# Desktop.ini
+
+# # -----------------------
+# # Optional: Editor backups, local history
+# # -----------------------
+# *~ 
+# *.swp
+# .*.swp
+# *.swo
+# *.orig
+
 *.class
-
-# Package files
-*.jar
-*.war
-*.ear
-
-# Build directories
-/target/
-/build/
-/out/
-/bin/
-/generated/
-
-# Gradle
-.gradle/
-/build/
-!gradle/wrapper/gradle-wrapper.jar
-
-# Maven
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-
-# IDE files
-*.iml
-*.ipr
-*.iws
-/.idea/
-/.project
-.classpath
-.settings/
-nbproject/private/
-
-# -----------------------
-# VS Code
-# -----------------------
-.vscode/
-.vscode-test/
-
-# -----------------------
-# Node / MERN
-# -----------------------
-# Node modules
-/node_modules/
-//node_modules/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Builds & caches
-/dist/
-/build/
-/.next/
-/out/
-/public/static/
-/.cache/
-.tmp/
-.temp/
-
-# Test coverage
-/coverage/
-.nyc_output/
-
-# Environment files
-.env
-.env.*.local
-.env.local
-.env.production.local
-.env.development.local
-
-# Misc
-*.tgz
-*.log
-
-# Ignore lockfiles? (Usually you should commit package-lock.json/yarn.lock for reproducible builds)
-# Uncomment if you want to ignore specific lockfiles:
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
-
-# -----------------------
-# Database / Dev artifacts (MERN)
-# -----------------------
-/data/
-/data/db/
-/dump/
-/mongodb/
-/mongo-data/
-
-# -----------------------
-# Docker
-# -----------------------
-/docker-compose.override.yml
-.docker/
-
-# -----------------------
-# OS
-# -----------------------
-.DS_Store
-Thumbs.db
-Desktop.ini
-
-# -----------------------
-# Optional: Editor backups, local history
-# -----------------------
-*~ 
-*.swp
-.*.swp
-*.swo
-*.orig

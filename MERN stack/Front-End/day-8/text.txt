@@ -1,0 +1,100 @@
+1. What is HTML and Why It is Required?
+HTML (HyperText Markup Language) is the base of every website
+you see. It tells the browser how to structure and display the content.
+Think of it like the skeleton of a human body – without it, there’s no
+structure.
+
+HyperText: Text that can link to other texts or resources.
+
+Markup: Special tags used to define structure and meaning of content.
+
+Language: A set of rules for writing web pages.
+
+Real-Life Example:Creating a resume in MS Word where you add headings,
+paragraphs, bullet points etc. Similarly, in websites, HTML tags tell
+the browser: this is a heading, this is a paragraph, this is a list.
+ 
+
+2. Importance & Role of HTML
+    1.Structure: D efines how text, images, links, and media are placed.
+    2.Accessibility: Helps screen readers and assistive technologies understand
+      content.
+    3.SEO: Search engines read HTML to rank websites.
+    4.Presentation: Provides meaningful structure before CSS styles it.
+    5.Universal: Works across all devices and browsers.
+
+HTML Notes
+3. HTML Boilerplate
+Before adding content, we start with a boilerplate. It’s like laying
+down the foundation of a house before putting furniture inside.
+
+
+
+Explanation:
+*<!DOCTYPE html> → Defines document type as HTML5.
+
+*<html lang="en"> → Root element. lang="en" means English language.
+
+*<head> → Metadata (title, encoding, styles, etc).
+
+*<meta charset="UTF-8"> → Supports all characters (English, Hindi, emojis,
+ etc).
+
+*<meta name="viewport"> → Makes site responsive on mobile.
+
+*<title> → Title shown on browser tab.
+
+*<body> → Everything visible on the webpage.
+
+ Real-Life Example:
+head is like the admin details of a building, and body is where
+people actually live.
+
+4. HTML Tags You Learned
+4.1 Headings (h1 to h6)
+
+Newspaper analogy:
+Front-page headline = <h1>. Smaller news titles = <h2> or <h3>.
+
+4.2 Paragraph (p)
+ 
+ Like writing a paragraph in your notebook.
+
+4.3 Bold (b)
+4.4 Italic (i)
+4.5 Underline (u)
+
+
+4.6 Superscript (sup)
+4.7 Subscript (sub)
+4.8 Lorem (Dummy Text)
+      -Used when actual content is not ready.
+
+
+4.9 Ordered List (ol, li)
+4.10 Unordered List (ul, li)
+ Grocery list.
+
+4.11 Anchor Tag (a, href, target)
+      href → Destination URL.
+      target="_blank" → Opens in a new tab.
+4.12 Comments (<!-- -->)
+
+     Real-life analogy: Side notes in your notebook that only you
+     can see.
+4.13 Image Tag (img)
+ 
+src → path of image.
+
+alt → alternative text (important for SEO & accessibility).
+
+4.14 Line Break (br) and Horizontal Rule (hr)
+<br> → Line break (new line).
+<hr> → Horizontal line divider.
+
+4.15 Self-Closing Tags
+<img>
+
+<br>
+
+<hr>
