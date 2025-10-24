@@ -130,3 +130,6 @@
 # *.orig
 
 *.class
+
+# Ignore VS Code temporary Java files
+tempCodeRunnerFile.*
