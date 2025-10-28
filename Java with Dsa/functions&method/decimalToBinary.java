@@ -5,11 +5,12 @@ public class decimalToBinary {
         int p=0;
         int bin=0;
         while(decimalNumber>0){
-            int rem=decimalNumber%10;
-            bin=bin+rem* (int)Math.pow(10,p);
+            int rem=decimalNumber%2;
+            bin=bin+(rem* (int)Math.pow(10,p));
             p++;
+            decimalNumber=decimalNumber/2;
         }
-        System.out.println("decimal number :"+dec);
+        System.out.println("decimal number :"+bin);
        
     }
     public static void main(String[] args){
