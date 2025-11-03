@@ -17,7 +17,10 @@ public class day13a {
         for(int j=i; j<arr.length;j++){
         int end =j;
         for(int k=start;k<=end;k++){
-            System.out.print(arr[k]+" ");
+            
+            System.out.print(arr[k]+" " );
+            
+
         }
         System.out.println();
         }
