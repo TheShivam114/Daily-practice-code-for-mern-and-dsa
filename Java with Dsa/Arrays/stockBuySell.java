@@ -15,6 +15,6 @@ public class stockBuySell {
     }
     public static void main(String[] args){
         int arr[]={7,1,5,6,4};
-        stock(arr);
+        System.out.println(stock(arr));
     }
 }
