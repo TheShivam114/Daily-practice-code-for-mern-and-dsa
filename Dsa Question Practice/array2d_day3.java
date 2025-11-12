@@ -25,7 +25,7 @@ public class array2d_day3 {
         //     }
         // }
 
-        //best aproch
+        //best approach
        for(int i=0;i<matrix.length;i++){
         
             sum += matrix[i][i];
