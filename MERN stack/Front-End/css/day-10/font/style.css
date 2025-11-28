@@ -1,0 +1,22 @@
+@font-face{
+    font-family: any;
+    src: url(./PerfectoCalligraphy.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    font-size: 100px;
+    font-weight: 100;
+    font-family: any;
+    color: red;
+    background-color: black;
+    height: 700px;
+    text-align: center;
+}
