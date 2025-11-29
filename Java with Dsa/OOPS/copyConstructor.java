@@ -10,6 +10,7 @@ public class copyConstructor {
 
         student s2 =new student(s1);//copy
         s2.password="xyz";
+        s1.marks[2]=80;
         for(int i=0;i<3;i++){
             System.out.println(s2.marks[i]);
         }
@@ -26,10 +27,12 @@ class student{
         this.name=s1.name;
         this.roll=s1.roll;
         this.marks=s1.marks;
+        this.password=s1.password;
      }
      student(){
          marks = new int[3];
         System.out.println("student name");
+        System.out.println(this.name);
      }
      student(String name){
          marks = new int[3];

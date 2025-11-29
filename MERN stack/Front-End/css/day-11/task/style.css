@@ -1,0 +1,40 @@
+@font-face {
+    font-family: ss;
+    src: url(./PerfectoCalligraphy.ttf);
+        font-weight: 900;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-image: url(./20251012_OHR.SaranacLake_EN-IN0774753637_UHD_bing.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size:cover;
+    text-align: center;
+}
+h1{
+   font-size: 100px; 
+   font-family: ss;
+   /* font-weight: 50; */
+   color: beige;
+   padding: 50px;
+   
+}
+
+button{
+    background-color: transparent;
+    color: black;
+    border: 2px,solid,crimson;
+    margin-top: 300px;
+    padding: 15px 30px;
+    font-size: 40px;
+    font-weight: 100;
+}
