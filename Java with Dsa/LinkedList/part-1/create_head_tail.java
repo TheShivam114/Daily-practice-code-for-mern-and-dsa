@@ -1,5 +1,5 @@
 public class create_head_tail {
-    public class node{
+    public static class node{
         int data;
         node next;
 
@@ -15,8 +15,7 @@ public class create_head_tail {
 
     public static void main(String[] args){
          create_head_tail ll=new create_head_tail();
-           ll.head = new node(0);
-            ll.head.next =new node(2);
+           ll.head=new node(1);
     }
     
 }
