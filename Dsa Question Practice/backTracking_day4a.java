@@ -93,5 +93,6 @@ public class backTracking_day4a {
        }
 
         nQueens(board, 0);
+        nQueens(board, 1);
     }
 }
