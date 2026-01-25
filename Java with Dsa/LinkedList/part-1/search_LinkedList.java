@@ -15,6 +15,7 @@ public class search_LinkedList {
     
     public void AddFist(int data){
         node newnode=new node(data);
+        size++;
        if(head==null){
           head=tail=newnode;
           return ;
@@ -24,6 +25,7 @@ public class search_LinkedList {
     }
     public void addLast(int data){
         node newnode=new node(data);
+        size++;
         if(head==null){
             head=tail=newnode;
             return;
@@ -52,7 +54,9 @@ public class search_LinkedList {
           AddFist(data);
           return;
         }
+
         node newnode=new node(data);
+        size++;
         node temp=head;
         int i=0;
         while (i<index-1 &&temp != null) {
@@ -69,7 +73,19 @@ public class search_LinkedList {
      }
 
      public int removefirst(){
-          if()
+          if(size==0){
+            System.out.println("ll is empty");
+            return Integer.MIN_VALUE;
+          }
+          else if(size==1){
+           int val=head.data;
+           head=tail=null;
+           return val;
+          }
+          int val=head.data;
+          head=head.next;
+          size--;
+          return val;
      }
     public static void main(String[] arga){
          search_LinkedList ll=new search_LinkedList();
@@ -79,6 +95,8 @@ public class search_LinkedList {
              ll.addLast(3);
              ll.print();  
              ll.addMid(10,5);
+             ll.print();
+             ll.removefirst();
              ll.print();
     }
 }
