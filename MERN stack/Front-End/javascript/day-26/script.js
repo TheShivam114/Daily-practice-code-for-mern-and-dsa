@@ -64,4 +64,22 @@ data is of many type but its devided into two types mainly
   *bidInt->vert large integers
   1234567891011121314
 
+  int  a=12;
+  let b=a;
+  a=a+2;
+  it cant change in b 
+
+  but 
+
+  let a[1,2,3];
+  let b=a;
+  it will change in b, then its also change in a;
+
+  2. reference data type
+  .object->{name:"harsh",age:26}
+  .array->[10,20,30].
+  .function->function greet(){}
+
+  we cant copy any value it directly change in real value.
+
 */
