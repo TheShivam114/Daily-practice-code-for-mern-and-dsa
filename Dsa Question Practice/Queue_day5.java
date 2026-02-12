@@ -63,7 +63,7 @@ public class Queue_day5 {
           q.add(2);
           q.add(3);
           while (!q.isEmpty()) {
-             System.out.println(q.peek());
+            System.out.println(q.peek());
              q.remove();
           }
     }
