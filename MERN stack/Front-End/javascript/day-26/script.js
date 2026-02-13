@@ -82,4 +82,28 @@ data is of many type but its devided into two types mainly
 
   we cant copy any value it directly change in real value.
 
+  object
+  let a={
+  name:"harsh"};
+
+  let b=a
+  b.name="shivam";
+
+  it chage both a and b this is called refrance.
+
+*/
+
+/*
+ dynamic typing
+
+
+ =>js have not static typing and its has dynamic typing. it mean we can change the data because of dynamic typing
+
+ ex-int a=12;
+ a=true;
+
+
+ *type of quirks(eg,type of null==='object')
+
+ typeof 12 =>'number'
 */
