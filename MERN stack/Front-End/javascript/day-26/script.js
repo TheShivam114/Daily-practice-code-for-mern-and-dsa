@@ -106,4 +106,39 @@ data is of many type but its devided into two types mainly
  *type of quirks(eg,type of null==='object')
 
  typeof 12 =>'number'
-*/
+ 
+ 1=="1"->true;
+ 1==="1"->false;
+ typeofNUll=>'object'
+ typeofNaN=> 'number';
+
+ *type coercion(== vs ===)
+
+ it is a concept in which one type automaticlly convert
+ ex-
+ "5"+1=51(its convert by the help of coercion)
+ string+number
+   5   +  1
+      (51)
+      concatenation of string and number.
+
+   "5"-1=4
+   
+   =4} here"-" only do one work only subtract and "+" can do both + and concate its hapening because of coercion.
+
+
+   * truth vs falsy values
+
+   if(12){
+       
+   }=> here in javascript if"0 false" null undefined NaN document all" is present then it is false other wise its true.
+   *to check any number is true or false write "!!" then any things.
+     ex-!!->false
+        !!""->false
+        !!NAN->false
+
+        if(null){} =>this is not true ot false then js see its nature which is that this is true or false
+
+        ex-if(-1){
+        }  =>it is true.
+   */
