@@ -141,4 +141,33 @@ data is of many type but its devided into two types mainly
 
         ex-if(-1){
         }  =>it is true.
+
+        that's why 
+        0,false,"" null ,undefined Nan document.all
+                 are false
+
+      other number any things are true
+
+      question
+      *true+false=>1+0=>1
+      *null+1=>1=>0+1=>1
+      *5+"5"=>55=>concatenation
+      !! undefined =>false
+
+      Q.) why NAN is a number
+
+      => typeof NaN==='number'   //true
+      => in js.Nan is a failed mathematical numvrical operation
+            ex- s*"shivam"->Nan =>failes mat....op...
+
+      Q) undefined vs null
+      
+      ex- .let x;
+      console.log(x);//undefined
+      let y=nall;
+      console.log(y);//null
+
+      q)"s"+1 =>"s1"}concatenation
+
+      "s"-1 =>4
    */
