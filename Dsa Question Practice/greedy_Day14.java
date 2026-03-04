@@ -54,4 +54,4 @@ public class greedy_Day14 {
         System.out.println("Minimum Cost: " + minimumCost(x, y));
     }
 }
-}
+
