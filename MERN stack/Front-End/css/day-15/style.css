@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *{
    margin: 0;
    padding: 0;
@@ -14,10 +17,13 @@ html,body{
     background-color: lightblue;
     display: flex;
     gap: 30px;
+    padding: 20px;
 }
 .card{
     height: 300px;
     width: 250px;
     background-color: white;
+    border-radius: 10px;
+    
 }
 

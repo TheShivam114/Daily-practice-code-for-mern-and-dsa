@@ -1,0 +1,25 @@
+{
+  "name": "daily-practice-code-for-mern-and-dsa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheShivam114/Daily-practice-code-for-mern-and-dsa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheShivam114/Daily-practice-code-for-mern-and-dsa/issues"
+  },
+  "homepage": "https://github.com/TheShivam114/Daily-practice-code-for-mern-and-dsa#readme",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^3.4.19"
+  }
+}
