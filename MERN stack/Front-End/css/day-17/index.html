@@ -6,6 +6,23 @@
     <title>Document</title>
      <!-- <link rel="stylesheet" href="../../output.css">   -->
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+      <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .item {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
       <div class="h-[400px] w-full bg-gray-800 p-10 flex gap-5 flex-nowrap overflow-auto [&::-webkit-scrollbar]:hidden">
@@ -46,6 +63,15 @@
         <div class="border"></div>
         
     </div> -->
+
+      <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
 
     <div class="bg-blue-400 border-4 bg-clip-border p-3">hi</div>
     <div class="bg-blue-400 border-4 bg-clip-padding p-3">hi</div>
