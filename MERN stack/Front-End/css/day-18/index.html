@@ -7,124 +7,115 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
 
-  <title>Dribbble UI</title>
+  <title>Dribbble Hero</title>
 </head>
 
-<body class="bg-[#f8f7f4] font-sans">
+<body class="bg-[#f3f3f4] font-sans">
+  <header class="flex justify-between items-center px-10 py-5 bg-[#f3f3f4]">
+    
+    <h1 class="text-2xl font-bold">Dribbble</h1>
 
-  <!-- 🔥 NAVBAR (Glass Effect) -->
-  <header class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/70 border-b">
-    <div class="flex justify-between items-center px-10 py-4">
+    <nav class="hidden md:flex gap-8 text-gray-700 font-medium">
+      <a href="#">Explore</a>
+      <a href="#">Hire Talent</a>
+      <a href="#">Get Hired</a>
+      <a href="#">Community</a>
+    </nav>
 
-      <h1 class="text-2xl font-bold tracking-tight">Dribbble</h1>
-
-      <nav class="hidden md:flex gap-8 text-gray-700 font-medium">
-        <a href="#" class="hover:text-black transition">Explore</a>
-        <a href="#" class="hover:text-black transition">Hire Talent</a>
-        <a href="#" class="hover:text-black transition">Get Hired</a>
-        <a href="#" class="hover:text-black transition">Community</a>
-      </nav>
-
-      <div class="flex items-center gap-4">
-        <button class="px-4 py-2 text-gray-700 hover:text-black">Sign up</button>
-        <button class="px-5 py-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 text-white shadow-lg hover:scale-105 transition">
-          Log in
-        </button>
-      </div>
-
+    <div class="flex items-center gap-5">
+      <button>Sign up</button>
+      <button class="bg-[#0d0c22] text-white px-6 py-2 rounded-full">
+        Log in
+      </button>
     </div>
+
   </header>
 
-  <!-- 🔥 HERO -->
-  <section class="pt-32 text-center px-5">
+  <!--  HERO SECTION -->
+  <section class="px-10 py-10 grid md:grid-cols-2 gap-10 items-center">
 
-    <h1 class="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-      Discover the <br>
-      <span class="bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text">
+    <!-- LEFT CONTENT -->
+    <div>
+
+      <h1 class="text-[60px] leading-[70px] font-bold text-[#0d0c22]">
+        Discover the <br>
         World’s Top Designers
-      </span>
-    </h1>
+      </h1>
 
-    <p class="mt-6 text-gray-600 text-lg max-w-2xl mx-auto">
-      Explore work from the most talented designers ready to take on your next project.
-    </p>
+      <p class="mt-6 text-gray-600 text-lg">
+        Explore work from the most talented and accomplished <br>
+        designers ready to take on your next project.
+      </p>
 
-    <!-- 🔍 FLOATING SEARCH -->
-    <div class="mt-10 flex justify-center">
-      <div class="flex items-center bg-white shadow-xl rounded-full px-6 py-3 w-full max-w-xl hover:shadow-2xl transition">
-        <i class="ri-search-line text-gray-500 text-xl"></i>
-        <input 
-          type="text"
-          placeholder="What are you looking for?"
-          class="w-full outline-none px-4 bg-transparent"
-        >
-        <button class="bg-black text-white px-5 py-2 rounded-full hover:bg-gray-800 transition">
-          Search
+      <!-- FILTER -->
+      <div class="flex gap-6 mt-8 items-center">
+        <button class="bg-[#0d0c22] text-white px-5 py-2 rounded-full flex items-center gap-2">
+          <i class="ri-image-line"></i> Shots
+        </button>
+        <button class="flex items-center gap-2 text-gray-700">
+          <i class="ri-user-line"></i> Designers
+        </button>
+        <button class="flex items-center gap-2 text-gray-700">
+          <i class="ri-briefcase-line"></i> Services
         </button>
       </div>
-    </div>
 
-    <!-- FILTER -->
-    <div class="mt-8 flex justify-center gap-4 flex-wrap">
-      <button class="px-5 py-2 rounded-full bg-black text-white shadow">Shots</button>
-      <button class="px-5 py-2 rounded-full bg-white border hover:bg-gray-100">Designers</button>
-      <button class="px-5 py-2 rounded-full bg-white border hover:bg-gray-100">Services</button>
-    </div>
-
-  </section>
-
-  <!-- 🔥 GRID -->
-  <section class="px-6 py-16">
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-
-      <!-- CARD -->
-      <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-
-        <!-- IMAGE -->
-        <img 
-          src="https://plus.unsplash.com/premium_photo-1770749403846-78ca39f655b1" 
-          class="w-full h-[260px] object-cover transition duration-500 group-hover:scale-110"
+      <!--  SEARCH -->
+      <div class="mt-6 flex items-center bg-white rounded-full px-5 py-3 shadow-sm w-full max-w-xl">
+        <input 
+          type="text"
+          placeholder="What type of design are you interested in?"
+          class="w-full outline-none"
         >
-
-        <!-- OVERLAY -->
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 backdrop-blur-sm"></div>
-
-        <!-- CONTENT -->
-        <div class="absolute bottom-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition duration-300">
-          <div class="flex justify-between items-center text-white">
-
-            <div>
-              <h4 class="font-semibold">Liere Cavia</h4>
-              <p class="text-sm opacity-80">UI Designer</p>
-            </div>
-
-            <div class="flex gap-2">
-              <i class="ri-heart-fill bg-white text-black p-2 rounded-full hover:bg-red-500 hover:text-white transition"></i>
-              <i class="ri-bookmark-fill bg-white text-black p-2 rounded-full hover:bg-black hover:text-white transition"></i>
-            </div>
-
-          </div>
-        </div>
-
+        <button class="bg-pink-500 text-white p-3 rounded-full">
+          <i class="ri-search-line"></i>
+        </button>
       </div>
 
-      <!-- REPEAT CARD -->
-      <div class="group relative rounded-2xl overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1528120369764-0423708119ae"
-          class="w-full h-[260px] object-cover transition duration-500 group-hover:scale-110">
+      <!--  TAGS -->
+      <div class="mt-5 flex flex-wrap items-center gap-3 text-sm">
+        <span class="text-gray-700 font-medium">Popular:</span>
 
-        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition backdrop-blur-sm"></div>
-
-        <div class="absolute bottom-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition">
-          <div class="flex justify-between text-white">
-            <h4>Creative Work</h4>
-            <i class="ri-heart-fill bg-white text-black p-2 rounded-full"></i>
-          </div>
-        </div>
+        <span class="px-4 py-1 bg-white rounded-full border">dashboard</span>
+        <span class="px-4 py-1 bg-white rounded-full border">landing page</span>
+        <span class="px-4 py-1 bg-white rounded-full border">e-commerce</span>
+        <span class="px-4 py-1 bg-white rounded-full border">logo</span>
+        <span class="px-4 py-1 bg-white rounded-full border">card</span>
+        <span class="px-4 py-1 bg-white rounded-full border">icons</span>
       </div>
 
     </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="relative">
+
+      <img 
+        src="https://images.unsplash.com/photo-1674027392846-3b6e0cce3f4b?q=80&w=1200"
+        class="rounded-3xl shadow-lg w-full"
+      >
+
+      <!-- Floating Badge -->
+      <div class="absolute bottom-5 right-5 bg-white px-4 py-2 rounded-full shadow flex items-center gap-2">
+        <div class="w-6 h-6 bg-black rounded-full"></div>
+        <span class="text-sm">Dmazing</span>
+      </div>
+
+    </div>
+
   </section>
+
+  <!--  BOTTOM STRIP -->
+  <div class="mx-10 mt-10 bg-white rounded-2xl p-6 flex items-center gap-6 shadow-sm">
+    
+    <button class="bg-[#f3f3f4] px-6 py-3 rounded-full flex items-center gap-2">
+      ✨ Start a Project Brief
+    </button>
+
+    <p class="text-gray-600">
+      Tell us what you need and instantly connect with world-class talent ready to work on your project.
+    </p>
+
+  </div>
 
 </body>
 </html>
