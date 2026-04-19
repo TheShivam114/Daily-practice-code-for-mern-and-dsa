@@ -1,61 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+
+  <style>
+    /* Animation */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      display: none;
+    }
+    .mobile-menu.active {
+      display: flex;
+    }
+  </style>
 </head>
+
 <body class="bg-gray-50 font-sans">
 
-  <nav class="flex items-center justify-between p-5 bg-white shadow-md">
-    <h1 class="text-2xl font-bold text-indigo-600">MyBrand</h1>
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-4 md:p-6 bg-white shadow-md">
+    <h1 class="text-xl md:text-2xl font-bold text-indigo-600">MyBrand</h1>
+
+    <!-- Desktop Menu -->
     <ul class="hidden md:flex gap-6 text-gray-600 font-medium">
-      <li class="hover:text-indigo-600 cursor-pointer transition duration-300 hover:scale-110">Home</li>
-      <li class="hover:text-indigo-600 cursor-pointer transition duration-300 hover:scale-110">About</li>
-      <li class="hover:text-indigo-600 cursor-pointer transition duration-300 hover:scale-110">Services</li>
-      <li class="hover:text-indigo-600 cursor-pointer transition duration-300 hover:scale-110">Contact</li>
+      <li class="hover:text-indigo-600 cursor-pointer">Home</li>
+      <li class="hover:text-indigo-600 cursor-pointer">About</li>
+      <li class="hover:text-indigo-600 cursor-pointer">Services</li>
+      <li class="hover:text-indigo-600 cursor-pointer">Contact</li>
     </ul>
-    <button class="bg-indigo-600 text-white px-4 py-2 rounded-xl hover:bg-indigo-700 transition hover:scale-105">
+
+    <!-- Login Button -->
+    <button class="hidden md:block bg-indigo-600 text-white px-4 py-2 rounded-xl hover:bg-indigo-700 transition">
       Login
     </button>
+
+    <!-- Hamburger -->
+    <i class="ri-menu-line text-2xl md:hidden cursor-pointer" id="menuBtn"></i>
   </nav>
 
-  <section class="text-center py-20 bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
-    <h2 class="text-4xl md:text-6xl font-bold mb-6 animate-float">
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu flex-col items-center bg-white shadow-md py-5 gap-4">
+    <a href="#" class="text-gray-700">Home</a>
+    <a href="#" class="text-gray-700">About</a>
+    <a href="#" class="text-gray-700">Services</a>
+    <a href="#" class="text-gray-700">Contact</a>
+    <button class="bg-indigo-600 text-white px-4 py-2 rounded-xl">
+      Login
+    </button>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 md:py-24 px-4 bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
+    <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 fade-up">
       Build Beautiful Websites
     </h2>
-    <p class="text-lg mb-6 fade-up">Design modern UI with smooth animations</p>
-    <button class="bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition hover:scale-110 fade-up">
+    <p class="text-base md:text-lg mb-6 fade-up">
+      Design modern UI with smooth animations
+    </p>
+    <button class="bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition fade-up">
       Get Started
     </button>
   </section>
-  <section class="py-16 px-6">
-    <h2 class="text-3xl font-bold text-center mb-10 fade-up">Our Services</h2>
 
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition hover:-translate-y-3 fade-up">
-        <h3 class="text-xl font-semibold mb-3">Web Design</h3>
-        <p class="text-gray-600">Modern and clean UI design.</p>
+  <!-- Services -->
+  <section class="py-12 md:py-16 px-4 md:px-10">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 fade-up">
+      Our Services
+    </h2>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition hover:-translate-y-2 fade-up">
+        <h3 class="text-lg md:text-xl font-semibold mb-3">Web Design</h3>
+        <p class="text-gray-600 text-sm md:text-base">Modern and clean UI design.</p>
       </div>
 
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition hover:-translate-y-3 fade-up">
-        <h3 class="text-xl font-semibold mb-3">Development</h3>
-        <p class="text-gray-600">Fast and scalable apps.</p>
+      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition hover:-translate-y-2 fade-up">
+        <h3 class="text-lg md:text-xl font-semibold mb-3">Development</h3>
+        <p class="text-gray-600 text-sm md:text-base">Fast and scalable apps.</p>
       </div>
 
-      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition hover:-translate-y-3 fade-up">
-        <h3 class="text-xl font-semibold mb-3">SEO</h3>
-        <p class="text-gray-600">Rank higher on Google.</p>
+      <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition hover:-translate-y-2 fade-up">
+        <h3 class="text-lg md:text-xl font-semibold mb-3">SEO</h3>
+        <p class="text-gray-600 text-sm md:text-base">Rank higher on Google.</p>
       </div>
-
     </div>
   </section>
-  <footer class="bg-gray-900 text-white text-center p-6">
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center p-4 md:p-6 text-sm md:text-base">
     <p>© 2026 MyBrand. All rights reserved.</p>
   </footer>
+
+  <!-- Script -->
   <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+
+    // Scroll animation
     const elements = document.querySelectorAll('.fade-up');
 
     const observer = new IntersectionObserver(entries => {
