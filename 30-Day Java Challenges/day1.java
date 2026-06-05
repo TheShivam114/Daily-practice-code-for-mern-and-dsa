@@ -1,39 +1,54 @@
 /*Task
-To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.
+Complete the code in the editor below. The variables , , and  are already declared and initialized for you. You must:
 
-You've got this!
-
-Note: The instructions are Java-based, but we support submissions in many popular languages. You can switch languages using the drop-down menu above your editor, and the  variable may be written differently depending on the best-practice conventions of your submission language.
+Declare  variables: one of type int, one of type double, and one of type String.
+Read  lines of input from stdin (according to the sequence given in the Input Format section below) and initialize your  variables.
+Use the  operator to perform the following operations:
+Print the sum of  plus your int variable on a new line.
+Print the sum of  plus your double variable to a scale of one decimal place on a new line.
+Concatenate  with the string you read as input and print the result on a new line.
+Note: If you are using a language that doesn't support using  for string concatenation (e.g.: C), you can just print one variable immediately following the other on the same line. The string provided in your editor must be printed first, immediately followed by the string you read as input.
 
 Input Format
 
-A single line of text denoting  (the variable whose contents must be printed).
+The first line contains an integer that you must sum with .
+The second line contains a double that you must sum with .
+The third line contains a string that you must concatenate with .
 
 Output Format
 
-Print Hello, World. on the first line, and the contents of  on the second line.
+Print the sum of both integers on the first line, the sum of both doubles (scaled to  decimal place) on the second line, and then the two concatenated strings on the third line.
 
 Sample Input
 
-Welcome to 30 Days of Code!
+12
+4.0
+is the best place to learn and practice coding!
 Sample Output
 
-Hello, World. 
-Welcome to 30 Days of Code! */
-
+16
+8.0
+HackerRank is the best place to learn and practice coding! */
 
 import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 import java.util.Scanner;
+
 public class day1 {
+
     public static void main(String[] args) {
-     Scanner s =new Scanner(System.in);
-     String massage=s.nextLine();
-     s.close();
-     System.out.println("Hello, World.");
-     System.out.println(massage);
+       
+        int i=4;
+        double d=4.0;
+        String s="HackerRank";
+        Scanner scan=new Scanner(System.in);
+        int a=scan.nextInt();
+        double b=scan.nextDouble();
+        scan.nextLine();
+        String c=scan.nextLine();
+        System.out.println(a+i);
+        System.out.println(b+d);
+        System.out.println(s+" "+ c);
+        scan.close();
     }
 }

@@ -1,54 +1,67 @@
-/*Task
-Complete the code in the editor below. The variables , , and  are already declared and initialized for you. You must:
+/*
+Objective
+In this challenge, you will work with arithmetic operators. Check out the Tutorial tab for learning materials and an instructional video.
 
-Declare  variables: one of type int, one of type double, and one of type String.
-Read  lines of input from stdin (according to the sequence given in the Input Format section below) and initialize your  variables.
-Use the  operator to perform the following operations:
-Print the sum of  plus your int variable on a new line.
-Print the sum of  plus your double variable to a scale of one decimal place on a new line.
-Concatenate  with the string you read as input and print the result on a new line.
-Note: If you are using a language that doesn't support using  for string concatenation (e.g.: C), you can just print one variable immediately following the other on the same line. The string provided in your editor must be printed first, immediately followed by the string you read as input.
+Task
+Given the meal price (base cost of a meal), tip percent (the percentage of the meal price being added as tip), and tax percent (the percentage of the meal price being added as tax) for a meal, find and print the meal's total cost. Round the result to the nearest integer.
+
+Example
+
+
+
+A tip of 15% * 100 = 15, and the taxes are 8% * 100 = 8. Print the value  and return from the function.
+
+Function Description
+Complete the solve function in the editor below.
+
+solve has the following parameters:
+
+int meal_cost: the cost of food before tip and tax
+int tip_percent: the tip percentage
+int tax_percent: the tax percentage
+Returns The function returns nothing. Print the calculated value, rounded to the nearest integer.
+
+Note: Be sure to use precise values for your calculations, or you may end up with an incorrectly rounded result.
 
 Input Format
 
-The first line contains an integer that you must sum with .
-The second line contains a double that you must sum with .
-The third line contains a string that you must concatenate with .
-
-Output Format
-
-Print the sum of both integers on the first line, the sum of both doubles (scaled to  decimal place) on the second line, and then the two concatenated strings on the third line.
+There are  lines of numeric input:
+The first line has a double,  (the cost of the meal before tax and tip).
+The second line has an integer,  (the percentage of  being added as tip).
+The third line has an integer,  (the percentage of  being added as tax).
 
 Sample Input
 
-12
-4.0
-is the best place to learn and practice coding!
+12.00
+20
+8
 Sample Output
 
-16
-8.0
-HackerRank is the best place to learn and practice coding! */
-
-import java.io.*;
+15
+*/
+    import java.io.*;
 import java.util.*;
-import java.util.Scanner;
 
 public class day2 {
 
+    public static void solve(double meal_cost, int tip_percent, int tax_percent) {
+        double totalCost = meal_cost
+                         + (meal_cost * tip_percent / 100.0)
+                         + (meal_cost * tax_percent / 100.0);
+
+        System.out.println(Math.round(totalCost));
+    }
+
     public static void main(String[] args) {
-       
-        int i=4;
-        double d=4.0;
-        String s="HackerRank";
-        Scanner scan=new Scanner(System.in);
-        int a=scan.nextInt();
-        double b=scan.nextDouble();
-        scan.nextLine();
-        String c=scan.nextLine();
-        System.out.println(a+i);
-        System.out.println(b+d);
-        System.out.println(s+" "+ c);
+        Scanner scan = new Scanner(System.in);
+
+        double meal_cost = scan.nextDouble();
+        int tip_percent = scan.nextInt();
+        int tax_percent = scan.nextInt();
+
+        solve(meal_cost, tip_percent, tax_percent);
+
         scan.close();
     }
 }
+
