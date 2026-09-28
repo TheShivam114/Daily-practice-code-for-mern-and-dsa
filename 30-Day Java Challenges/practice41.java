@@ -32,6 +32,47 @@ Constraints:
 0 <= s.length <= 105
 s consists of English letters, digits, symbols and spaces.
 */
+    import java.util.HashSet;
+import java.util.Scanner;
+
 public class practice41 {
-    
+
+    public static int lengthOfLongestSubstring(String s) {
+        HashSet<Character> set = new HashSet<>();
+
+        int left = 0;
+        int maxLength = 0;
+
+        for (int right = 0; right < s.length(); right++) {
+
+            // Remove characters until there is no duplicate
+            while (set.contains(s.charAt(right))) {
+                set.remove(s.charAt(left));
+                left++;
+            }
+
+            // Add current character
+            set.add(s.charAt(right));
+
+            // Calculate maximum length
+            maxLength = Math.max(maxLength, right - left + 1);
+        }
+
+        return maxLength;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter string: ");
+        String s = sc.nextLine();
+
+        int result = lengthOfLongestSubstring(s);
+
+        System.out.println("Length of longest substring: " + result);
+
+        sc.close();
+    }
 }
+
