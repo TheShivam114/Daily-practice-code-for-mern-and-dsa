@@ -1,0 +1,7 @@
+
+The Challenge: Word Length Filter
+
+Write a function named filter_long_words that takes two inputs:
+1. A list of strings (words).
+2. An integer (the minimum length).
+The function should return a new list containing only the words that are strictly longer than the given number.
